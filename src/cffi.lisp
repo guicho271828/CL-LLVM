@@ -83,6 +83,16 @@
 
 (define-foreign-library libllvm
   (:darwin (:or (:default "libLLVM")
+                (:default "libLLVM-13")
+                (:default "libLLVM-12")
+                (:default "libLLVM-11")
+                (:default "libLLVM-10")
+                (:default "libLLVM-9")
+                (:default "libLLVM-8")
+                (:default "libLLVM-7")
+                (:default "libLLVM-6.0")
+                (:default "libLLVM-5.0")
+                (:default "libLLVM-4.0")
                 (:default "libLLVM-3.6")
                 (:default "libLLVM-3.5")
                 (:default "libLLVM-3.1")
@@ -90,7 +100,16 @@
                 (:default "libLLVM-3.0")))
   (:unix (:or "libLLVM.so"
               "libLLVM.so.1"
+              "libLLVM-13.so"
+              "libLLVM-12.so"
+              "libLLVM-11.so"
+              "libLLVM-10.so"
+              "libLLVM-9.so"
+              "libLLVM-8.so"
+              "libLLVM-7.so"
               "libLLVM-6.0.so"
+              "libLLVM-5.0.so"
+              "libLLVM-4.0.so"
               "libLLVM-3.6.so"
               "libLLVM-3.1.so"
               "libLLVM-3.1.so.1"
@@ -99,6 +118,16 @@
               "libLLVM-3.0.so"
               "libLLVM-3.0.so.1"))
   (t (:or (:default "libLLVM")
+          (:default "libLLVM-13")
+          (:default "libLLVM-12")
+          (:default "libLLVM-11")
+          (:default "libLLVM-10")
+          (:default "libLLVM-9")
+          (:default "libLLVM-8")
+          (:default "libLLVM-7")
+          (:default "libLLVM-6.0")
+          (:default "libLLVM-5.0")
+          (:default "libLLVM-4.0")
           (:default "libLLVM-3.6")
           (:default "libLLVM-3.1")
           (:default "libLLVM-3.1svn")
