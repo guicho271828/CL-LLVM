@@ -1,5 +1,5 @@
 #!/bin/sh
 
-autoreconf
+autoreconf -fvi
 ./configure
 make
